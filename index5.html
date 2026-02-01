@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <h2>COURSE REGISTRATION FORM</h2>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="FN">First Name</label></td>
+            <td><input type="text" name="FN" id="FN"  maxlength="10"  placeholder="EX:Sujith"/></td>
+          </tr>
+          <tr>
+            <td><label for="SN">Surname</label></td>
+            <td><input type="text" name="SN" id="SN" maxlength="10" placeholder="k"/></td>
+          </tr>
+          <tr>
+            <td><label for="MN">Mobile number </label></td>
+            <td><input type="tel" name="MN" id="MN" placeholder="EX:8074-56-214"/></td>
+          </tr>
+          <tr>
+            <td><label for="EMAIL">EMail</label></td>
+            <td><input type="email" name="EMAIL" id="EMAIL" placeholder="sujith@gmail.com"/></td>
+          </tr>
+          <tr>
+            <td><label for="PASS">Password</label></td>
+            <td><input type="password" name="PASS" id="PASS" placeholder="Min 8 Characters"/></td>
+          </tr>
+          <tr>
+            <td><label for="CON PASS">Conform Password</label></td>
+            <td><input type="password" name="CON PASS" id="CON PASS" placeholder="Min 8 Characters"/></td>
+          </tr>
+          <tr>
+            <td><label for="DOB">DOB</label></td>
+            <td><input type="date" name="DOB" id="DOB" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="AGE">AGE </label></td>
+            <td>
+              <input type="number" min="18" max="65" name="AGE" id="AGE" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="GENDER">Gender</label></td>
+            <td>
+              <input type="radio" name="GENDER" id="GENDER" value="MALE"/>
+              <label for="">MALE</label>
+              <input type="radio" name="GENDER" id="GENDER" value="FEMALE"/>
+              <label for="">FEMALE</label>
+              <input type="radio" name="GENDER" id="GENDER" value="OTHERS"/>
+              <label for="">OTHERS</label><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="Select Country" id="Select Country">
+                <option value="">INDIA</option>
+                <option value="">EUROPE</option>
+                <option value="">AMERICA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="uplaod">Upload Picture</label></td>
+            <td><input type="file" name="uplaod" id="uplaod" /><br /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="reset" /> <br />
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="SC">Select Course</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="SC" id="SC">
+                <option value="">JAVA FULL STACK</option>
+                <option value="">PYTHON FULL STACK</option>
+                <option value="">MERN</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="DM">Delivery Mode:</label></td></tr>
+            <tr>
+            <td>
+              <input type="radio" name="DM" id="DM" value="Online"/>
+              <label for="DM">Online</label>
+              <input type="radio" name="DM" id="DM" value="Offline"/>
+              <label for="DM">Offline</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Choose your present Coding knowledge Level: </td>
+            <tr>
+            <td>
+              <input type="range" name="CODING RANGE" id="CODING RANGE" />
+            </td>
+            </tr>
+          </tr>
+          <tr>
+            <td><label for="">Comments</label>
+            </td>
+            </tr>
+          <tr>
+            <td><textarea name="" id="" rows="5" cols="60"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      
+  
+      <input type="submit" />
+    </form>
+  </body>
+</html>
